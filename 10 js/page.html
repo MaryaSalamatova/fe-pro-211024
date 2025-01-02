@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tasks</title>
+  <style>
+    /* Завдання 1 */
+    #colorBox {
+      width: 200px;
+      height: 200px;
+      background-color: lightgray;
+      border: 2px solid black;
+      margin-bottom: 20px;
+    }
+
+    /* Завдання 2 */
+    #image {
+      width: 300px;
+      transition: transform 0.3s, filter 0.3s;
+      display: block;
+      margin-bottom: 20px;
+    }
+
+    /* Конвертер валют */
+    form {
+      width: 300px;
+      margin: 20px auto;
+      padding: 20px;
+      border: 1px solid black;
+      border-radius: 5px;
+    }
+    input, button {
+      display: block;
+      width: 100%;
+      margin-bottom: 10px;
+      padding: 5px;
+    }
+  </style>
+  <script defer src="control.js"></script>
+</head>
+<body>
+  <h1>JavaScript Tasks</h1>
+
+  <!-- Завдання 1 -->
+  <h2>1. onMouseOver і onMouseOut (Зміна кольору)</h2>
+  <div id="colorBox"></div>
+
+  <!-- Завдання 2 -->
+  <h2>2. onMouseOver і onMouseOut (Зображення)</h2>
+  <img id="image" src="example.jpg" alt="Example Image">
+
+  <!-- Конвертер валют -->
+  <h2>4. Конвертер валют</h2>
+  <form id="converterForm">
+    <label for="amount">Сума (в гривнях):</label>
+    <input type="number" id="amount" placeholder="Введіть суму">
+
+    <label for="rate">Курс обміну (грн/валюта):</label>
+    <input type="number" id="rate" placeholder="Введіть курс">
+
+    <button type="button" id="convertButton">Розрахувати</button>
+    <p>Результат: <span id="result">0</span> валют</p>
+  </form>
+</body>
+</html>

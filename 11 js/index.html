@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form Examples</title>
+</head>
+<body>
+  <h1>Форма з вибором улюбленого кольору</h1>
+  <form>
+    <label><input type="radio" name="color" value="red"> Червоний</label><br>
+    <label><input type="radio" name="color" value="green"> Зелений</label><br>
+    <label><input type="radio" name="color" value="blue"> Синій</label><br>
+  </form>
+
+  <h1>Форма для вибору хобі</h1>
+  <form>
+    <label><input type="checkbox" name="hobby" value="Читання"> Читання</label><br>
+    <label><input type="checkbox" name="hobby" value="Спорт"> Спорт</label><br>
+    <label><input type="checkbox" name="hobby" value="Музика"> Музика</label><br>
+  </form>
+  <p>Вибрані хобі: <span id="hobbyList"></span></p>
+
+  <h1>Форма з вибором країни</h1>
+  <form>
+    <select id="countrySelect">
+      <option value="">-- Виберіть країну --</option>
+      <option value="Україна">Україна</option>
+      <option value="США">США</option>
+      <option value="Німеччина">Німеччина</option>
+    </select>
+  </form>
+  <p id="countryInfo"></p>
+
+  <h1>Форма для оцінювання якості обслуговування</h1>
+  <form>
+    <label><input type="radio" name="rating" value="1"> 1</label>
+    <label><input type="radio" name="rating" value="2"> 2</label>
+    <label><input type="radio" name="rating" value="3"> 3</label>
+    <label><input type="radio" name="rating" value="4"> 4</label>
+    <label><input type="radio" name="rating" value="5"> 5</label>
+  </form>
+  <p id="ratingMessage"></p>
+
+  <h1>Динамічний список задач</h1>
+  <form>
+    <input type="text" id="taskInput" placeholder="Назва задачі">
+    <button type="button" id="addTaskButton">Додати задачу</button>
+  </form>
+  <ul id="taskList"></ul>
+
+  <script src="script.js"></script>
+</body>
+</html>

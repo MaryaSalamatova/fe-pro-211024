@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JavaScript Tasks</title>
+  <style>
+    p {
+      font-size: 20px;
+    }
+    .resizable {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      text-align: center;
+      line-height: 100px;
+      cursor: pointer;
+    }
+    .item {
+      width: 100px;
+      height: 50px;
+      background-color: lightcoral;
+      margin: 10px;
+      text-align: center;
+      line-height: 50px;
+      cursor: pointer;
+    }
+    #menu {
+      display: none;
+      list-style-type: none;
+    }
+    #menu li {
+      margin: 5px 0;
+    }
+  </style>
+</head>
+<body>
+  <!-- Task 1 -->
+  <h2>1. Change Color</h2>
+  <button id="colorButton">Змінити колір</button>
+  <p id="text">Це текст, що змінює колір!</p>
+
+  <!-- Task 2 -->
+  <h2>2. Double Click</h2>
+  <div id="resizable" class="resizable">Клікни двічі</div>
+
+  <!-- Task 3 -->
+  <h2>3. Counter</h2>
+  <button id="counterButton">Збільшити лічильник</button>
+  <p>Лічильник: <span id="counter">0</span></p>
+
+  <!-- Task 4 -->
+  <h2>4. Remove Elements</h2>
+  <button id="addDivsButton">Додати елементи</button>
+  <div id="container"></div>
+
+  <!-- Task 5 -->
+  <h2>5. Event Target</h2>
+  <div id="blockContainer">
+    <button class="button first">Перша кнопка</button>
+    <button class="button second">Друга кнопка</button>
+    <button class="button third">Третя кнопка</button>
+  </div>
+
+  <!-- Task 6 -->
+  <h2>6. Toggle Menu</h2>
+  <button id="menuButton">Відкрити меню</button>
+  <ul id="menu">
+    <li><a href="#">Лінк 1</a></li>
+    <li><a href="#">Лінк 2</a></li>
+    <li><a href="#">Лінк 3</a></li>
+  </ul>
+
+  <script src="script.js"></script>
+</body>
+</html>
